@@ -2,6 +2,9 @@
 
 A python bot (powered by computer vision) used to play City Island 5.
 
+![play-game-with-computer-vision](https://user-images.githubusercontent.com/45426293/204781699-7213c0de-480b-4068-954c-e76535875709.gif)
+
+
 Access a more comprehensive guide in this article here: [https://paulonteri.com/thoughts/play-game-with-computer-vision](https://paulonteri.com/thoughts/play-game-with-computer-vision).
 
 Here's a screen recording of the game play:
