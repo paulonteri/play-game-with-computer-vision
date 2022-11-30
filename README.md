@@ -1,6 +1,6 @@
 # Gaming using Computer Vision
 
-A python bot (powered by computer vision) used to play a game using computer vision and image processing techniques. 
+A python bot used to play a game using computer vision and image processing techniques. 
 The bot is able to play the game without any human intervention.
 It managed to make me a millionaire in the game overnight!
 
