@@ -4,12 +4,13 @@ A python bot (powered by computer vision) used to play City Island 5.
 
 ![play-game-with-computer-vision](https://user-images.githubusercontent.com/45426293/204781699-7213c0de-480b-4068-954c-e76535875709.gif)
 
-
-Access a more comprehensive guide in this article here: [https://paulonteri.com/thoughts/play-game-with-computer-vision](https://paulonteri.com/thoughts/play-game-with-computer-vision).
-
 Here's a screen recording of the game play:
 
 https://user-images.githubusercontent.com/45426293/204757801-eb57b481-af30-45ed-ac0b-1741168783b6.mp4
+
+Access a comprehensive guide in this article: [https://paulonteri.com/thoughts/play-game-with-computer-vision](https://paulonteri.com/thoughts/play-game-with-computer-vision).
+
+Disclaimer - this content is for educational purposes only!
 
 ---
 
@@ -17,7 +18,7 @@ https://user-images.githubusercontent.com/45426293/204757801-eb57b481-af30-45ed-
 
 I've been playing strategy + city building + simulation? games like [TownsMen 6](https://play.google.com/store/apps/details?id=com.hg.townsmen6&hl=en&gl=US), [Clash of the Clans](https://apps.apple.com/us/app/clash-of-clans/id529479190), [SimCity](https://store.steampowered.com/app/24780/SimCity_4_Deluxe_Edition/) for the last 10 years.
 
-On trying out [City Island 5](https://apps.apple.com/us/app/city-island-5-tycoon-sim-game/id1445023279?mt=12) I found it mildly irritating that my collectibles could not accumulate while I was outside the game. I might have had the best businesses, strategy, etc but I had to be in the game to ensure I collect the cash/keys/gold overtime. For example if my bakery makes €100 per minute I would only earn €100 after leaving the game and coming back 24 hours later.
+On trying out [City Island 5](https://apps.apple.com/us/app/city-island-5-tycoon-sim-game/id1445023279?mt=12) I found it mildly irritating that my collectables could not accumulate while I was outside the game. I might have had the best businesses, strategy, etc but I had to be in the game to ensure I collect the cash/keys/gold overtime. For example, if my bakery makes €100 per minute I would only earn €100 after leaving the game and coming back 24 hours later.
 
 This became especially tiresome while trying to accumulate €5,000,000 required to buy the island shown below. This would take me roughly two weeks of gameplay if I don't spend any money - it's not worth it.
 
@@ -35,13 +36,13 @@ The easiest way to to capture an in-game screenshot and pass it to the next step
 
 ### 2. Identify the valuables in the screenshot
 
-We need a way to detect a valuable in the game's feed then return its coordinates.
+We need a way to detect a valuable in the game's feed and then return its coordinates.
 
 `OpenCv`'s **Template Matching** algorithms are perfect for this.
 
-They are used for searching and finding the location of a template image (like a valuable) in a larger image (like the game's feed). It simply slides the template image over the input image (as in 2D convolution) and compares the template and patch of input image under the template image. Several comparison methods are implemented in OpenCV. (You can check [docs](https://docs.opencv.org/4.x/d4/dc6/tutorial_py_template_matching.html) for more details). We use it in the method: `cv2.matchTemplate(... )`
+They are used for searching and finding the location of a ***template image*** (like a valuable) in a larger image (like the game's feed). It simply slides the template image over the input image (as in 2D convolution) and compares the template and patch of the input image under the template image. Several comparison methods are implemented in OpenCV. (You can check [docs](https://docs.opencv.org/4.x/d4/dc6/tutorial_py_template_matching.html) for more details). We use it in the method: `cv2.matchTemplate(... )`
 
-To achieve this, I needed the template images. I took screenshots by hand then cropped off the cash, star and key:
+To achieve this, I needed the template images. I took screenshots by hand and then cropped off the cash, star and key:
 
 <img width="32" alt="cash" src="https://user-images.githubusercontent.com/45426293/204754890-ee25befa-094d-4dfd-829c-1302165d64e0.png">
 
@@ -69,7 +70,7 @@ Our clicks above may result in popups when we are being given a reward, levellin
 
 We need to close it before attempting to collect valuables again. We use the same logic used in finding and clicking on valuables.
 
-To achieve this, I needed the template images for the popups' close buttons so that they can be clicked. I took screenshots by hand then cropped off the various close buttons:
+To achieve this, I needed the template images for the popups' close buttons so that they can be clicked. I took screenshots by hand and then cropped off the various close buttons:
 
 <img width="32" alt="close" src="https://user-images.githubusercontent.com/45426293/204755164-9321de98-465a-455e-8d85-e656b1c7f16b.png">
 <img width="189" alt="continue_level" src="https://user-images.githubusercontent.com/45426293/204755189-b70fef92-4eea-444c-83be-00a7fbf49c36.png">
