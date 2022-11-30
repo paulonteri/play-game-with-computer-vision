@@ -1,6 +1,14 @@
 # Python bot used to play the game 'City Island'
 
-A python bot (powered by computer vision) used to play City Island 5
+A python bot (powered by computer vision) used to play City Island 5.
+
+Access a more comprehensive guide in this article here: [https://paulonteri.com/thoughts/play-game-with-computer-vision](https://paulonteri.com/thoughts/play-game-with-computer-vision).
+
+Here's a screen recording of the game play:
+
+https://user-images.githubusercontent.com/45426293/204757801-eb57b481-af30-45ed-ac0b-1741168783b6.mp4
+
+---
 
 ## Why?
 
@@ -11,6 +19,8 @@ On trying out [City Island 5](https://apps.apple.com/us/app/city-island-5-tycoon
 This became especially tiresome while trying to accumulate €5,000,000 required to buy the island shown below. This would take me roughly two weeks of gameplay if I don't spend any money - it's not worth it.
 
 <img width="995" alt="game_screenshot_island" src="https://user-images.githubusercontent.com/45426293/204755494-0fabfa0d-77df-4fa2-9474-9e6ebc8c4ebd.png">
+
+---
 
 ## How it works
 
@@ -44,9 +54,11 @@ Once we have the coordinates of an item we can try to click on it.
 `pyautogui`'s `.click(x,y)` function works like magic for this. It clicks the screen on the coordinates x and y where our valuable is lying.
 Learn more about it [here](https://pyautogui.readthedocs.io/en/latest/mouse.html#mouse-clicks).
 
-
 https://user-images.githubusercontent.com/45426293/204756803-38e48b98-1945-4ff7-b437-b73e58a97437.mp4
 
+https://user-images.githubusercontent.com/45426293/204758224-7ee70df4-e937-41b7-997e-18092e2fea1e.mp4
+
+https://user-images.githubusercontent.com/45426293/204758262-b07ade42-7114-4b94-bc37-874536786e0b.mp4
 
 ### 4. Close any popups that may appear
 
@@ -61,12 +73,13 @@ To achieve this, I needed the template images for the popups' close buttons so t
 
 https://user-images.githubusercontent.com/45426293/204756326-4b3db64a-e5e1-4191-83c1-73b9c74b8f7d.mp4
 
-
 ### 5. Repeat
 
 We do the steps above repeatedly to collect the valuables while the script is running.
 
+https://user-images.githubusercontent.com/45426293/204757801-eb57b481-af30-45ed-ac0b-1741168783b6.mp4
 
+---
 
 ## Results after running overnight
 
@@ -84,10 +97,34 @@ I then proceeded to buy the Island I wanted:
 
 ![image](https://user-images.githubusercontent.com/45426293/204755770-3499c14e-811e-465b-9196-e8a0604c863c.png)
 
+---
+
 ## Regrets
 
 - This is cheating.
 - Why get a game if you're not the one playing it?
+
+---
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+---
+
+## Maintainers
+
+Current maintainers:
+
+- Paul Onteri - <https://paulonteri.com>
+
+---
+
+## License
+
+[Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0)
+
+---
 
 ## Conclusion
 
