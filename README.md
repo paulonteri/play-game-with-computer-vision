@@ -1,6 +1,8 @@
-# Python bot used to play the game 'City Island'
+# Gaming using Computer Vision
 
-A python bot (powered by computer vision) used to play City Island 5.
+A python bot (powered by computer vision) used to play a game using computer vision and image processing techniques. 
+The bot is able to play the game without any human intervention.
+It managed to make me a millionaire in the game overnight!
 
 ![play-game-with-computer-vision](https://user-images.githubusercontent.com/45426293/204781699-7213c0de-480b-4068-954c-e76535875709.gif)
 
