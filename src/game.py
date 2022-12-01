@@ -68,7 +68,7 @@ def click_template_image(
 
         pyautogui.click(x=x_c, y=y_c)  # type:ignore
 
-        sleep(0.3)
+        sleep(0.3) # wait for popups to appear
 
         # Draw circles on points found
         # cv2.circle(game_screenshot, (x, y), 10, (255, 0, 0), 2)
