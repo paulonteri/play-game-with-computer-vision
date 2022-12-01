@@ -95,7 +95,8 @@ I started the game with €316,415.
 
 The following morning I had €6,463,870.
 
-<img width="1680" alt="game_screenshot_start" src="https://user-images.githubusercontent.com/45426293/204754670-f8fd23ef-1b49-4e30-8414-87c32f2d6b31.png">
+![game_screenshot_end](https://user-images.githubusercontent.com/45426293/205040815-ea6d2d0f-0084-4c88-9b02-846bc4690a4a.jpg)
+
 
 I made €6,147,455 overnight!
 
