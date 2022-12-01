@@ -46,6 +46,8 @@ def click_template_image(
 
     # print(np.where(result >= threshold))
     y_coords, x_coords = np.where(search_result >= threshold)  # type:ignore
+    # the screenshot might have a different resolution/dimensions form the actual screen. 
+    # the width & height reset multipliers are used to reset the w & h (screenshot's dimensions) to the actual screen's dimensions 
     width_reset_multiplier = game_screenshot.shape[1] / monitor["width"]
     height_reset_multiplier = game_screenshot.shape[0] / monitor["height"]
     w = template_image.shape[1]
